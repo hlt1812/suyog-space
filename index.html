@@ -300,9 +300,15 @@
     gap: 36px;
   }
   .note-card{
+    display: block;
     border-top: 1px solid var(--rule);
     padding-top: 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
   }
+  .note-card:hover{ transform: translateY(-2px); }
+  .note-card:hover h3{ color: var(--clay); }
   .note-card .tag{
     display: inline-block;
     font-size: 0.78rem;
@@ -316,12 +322,17 @@
     font-size: 1.15rem;
     line-height: 1.32;
     margin-bottom: 10px;
+    transition: color 0.2s ease;
   }
   .note-card p{
-    margin: 0;
+    margin: 0 0 10px;
     color: var(--ink-soft);
     font-size: 0.95rem;
     max-width: 40ch;
+  }
+  .note-card .read-on{
+    font-size: 0.85rem;
+    color: var(--sage-deep);
   }
   .notes-foot{
     margin-top: 40px;
@@ -552,21 +563,24 @@
           <h2>A few starting pieces.</h2>
         </div>
         <div class="notes-grid">
-          <div class="note-card">
+          <a class="note-card" href="https://www.instagram.com/p/DcI1GE0ivNA/?stkn=MTdlenJnd3AycWt6OA==" target="_blank" rel="noopener">
             <span class="tag">Guide</span>
-            <h3>Why most hip openers don't open hips</h3>
-            <p>A closer look at what's actually restricted when a pose feels stuck, and why forcing range rarely helps.</p>
-          </div>
-          <div class="note-card">
-            <span class="tag">Reflection</span>
-            <h3>The day I stopped chasing the deeper stretch</h3>
-            <p>Some notes on what changed once flexibility stopped being the point.</p>
-          </div>
-          <div class="note-card">
+            <h3>From the Ground Up: caring for the knees</h3>
+            <p>On why the knees rely so heavily on alignment and muscle support, and the simple practices she returns to for keeping them strong and mobile.</p>
+            <span class="read-on">Read on Instagram →</span>
+          </a>
+          <a class="note-card" href="https://www.instagram.com/p/DacV_tyCuN8/?stkn=ejNveWMzMzR6azM4" target="_blank" rel="noopener">
+            <span class="tag">Guide</span>
+            <h3>From the Ground Up: caring for the feet</h3>
+            <p>Simple, low-effort habits she's built around her feet — more barefoot time, varied surfaces, and footwear that actually gives the toes room.</p>
+            <span class="read-on">Read on Instagram →</span>
+          </a>
+          <a class="note-card" href="https://www.instagram.com/p/Dc5ZbLjFHNp/?stkn=aWF3OGpqb3R3cjNi" target="_blank" rel="noopener">
             <span class="tag">Essay</span>
-            <h3>Breath as the first teacher</h3>
-            <p>On pranayama, philosophy, and what the breath was trying to say before I started listening.</p>
-          </div>
+            <h3>Yoga as a work in</h3>
+            <p>On noticing how what happens in an hour of practice quietly shapes the rest of the day, often in places she wouldn't have expected.</p>
+            <span class="read-on">Read on Instagram →</span>
+          </a>
         </div>
         <p class="notes-foot">More soon — new pieces get added as they're written.</p>
       </div>
